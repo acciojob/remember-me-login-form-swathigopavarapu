@@ -1,1 +1,22 @@
 /*  your css code here. If applicable */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+#existing {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#existing:hover {
+  background: #0056b3;
+}
