@@ -1,5 +1,3 @@
-//your JS code here. If required.
-// Run when page loads
 window.onload = function () {
   const form = document.getElementById("loginForm");
   const usernameInput = document.getElementById("username");
@@ -7,7 +5,6 @@ window.onload = function () {
   const rememberMe = document.getElementById("checkbox");
   const existingBtn = document.getElementById("existing");
 
-  // Check if credentials exist in localStorage
   const savedUsername = localStorage.getItem("username");
   const savedPassword = localStorage.getItem("password");
 
@@ -15,7 +12,6 @@ window.onload = function () {
     existingBtn.style.display = "block";
   }
 
-  // Handle form submission
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -39,11 +35,9 @@ window.onload = function () {
       existingBtn.style.display = "none";
     }
 
-    // Optional: clear form fields
     form.reset();
   });
 
-  // Handle existing user login
   existingBtn.addEventListener("click", function () {
     const storedUser = localStorage.getItem("username");
     if (storedUser) {
@@ -51,4 +45,3 @@ window.onload = function () {
     }
   });
 };
-
